@@ -11,7 +11,7 @@ const LikeSection = props => {
 
   console.log(props)
   const { likePost, numberOfLikes } = props;
-
+  console.log(likePost)
   return (
     <div>
       <div
@@ -25,7 +25,7 @@ const LikeSection = props => {
           <FontAwesomeIcon icon={faComment} />
         </div>
       </div>
-      <p className='like-number'> <button>onClick={likePost}</button> {numberOfLikes}</p>
+      <p className='like-number'> <button onClick = {likePost + 1}>{numberOfLikes} </button> </p>
     </div>
   );
 };
